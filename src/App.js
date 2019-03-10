@@ -19,11 +19,16 @@ class App extends Component {
   }
 
   render() {
-    let displayHeaderOrSelectCity = this.state.header ? <Header/> : <SelectCity/>
+    if (this.state.header === true){
+      return (
+        <Header action={this.handler}/>
+      )
+    }
+    else {
     return (
-     <Header action={displayHeaderOrSelectCity}/>
+     <SelectCity/>
     );
   }
 }
-
+}
 export default App;
