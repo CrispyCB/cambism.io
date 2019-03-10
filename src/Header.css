@@ -8,14 +8,14 @@ button {
   color: white;
   
 }
-.App {
+.Header {
   text-align: center;
   background-color: #282c34;
   height: 56.7vh;
   padding-top: 20rem;
 }
 
-.App-header {
+.header-inside {
   display: flex;
   flex-direction: column;
   font-family: 'IM Fell DW Pica SC', serif;
