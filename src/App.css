@@ -1,33 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica+SC|IM+Fell+Great+Primer');
+button {
+  font-family: 'IM Fell Great Primer', serif;
+  background-color: #282c34;
+  appearance:none;
+  box-shadow: none;
+  border-radius: 0;
+  color: white;
+  
+}
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+  background-color: #282c34;
+  height: 56.7vh;
+  padding-top: 20rem;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  font-family: 'IM Fell DW Pica SC', serif;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btn-flat {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-flat:hover{
+  text-decoration-line: underline;
 }
