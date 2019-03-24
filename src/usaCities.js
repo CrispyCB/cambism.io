@@ -5328,7 +5328,7 @@ export const cities = [
 {'city': 'Torrington', 'state': 'CT'},
 {'city': 'Torrington', 'state': 'CT'},
 {'city': 'Totowa', 'state': 'NJ'},
-{'city': 'Town 'n' Country', 'state': 'FL'},
+{'city': 'Town n Country', 'state': 'FL'},
 {'city': 'Town and Country', 'state': 'MO'},
 {'city': 'Townsend', 'state': 'MA'},
 {'city': 'Towson', 'state': 'MD'},

@@ -1,6 +1,8 @@
 import React, { Component } from "react"
 import "./Header.css"
 
+import {cities} from "./usaCities.js"
+
 class SelectCity extends Component {
     render() {
       return (
@@ -9,8 +11,8 @@ class SelectCity extends Component {
             Select your city:
             </header>
             <div className="dropdown">
-              <span><a href={"#"}>Baltimore, MD</a></span>
               <div className="dropdown-content">
+              <span><a href={"#"}>Baltimore, MD</a></span>
               <span><a href={"#"}>Philadelphia, PA</a></span>
               <span><a href={"#"}>Pittsburgh, PA</a></span>
               <span><a href={"#"}>New York City, NY</a></span>
