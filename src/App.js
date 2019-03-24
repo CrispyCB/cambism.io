@@ -19,6 +19,7 @@ class App extends Component {
   }
 
   render() {
+    /* sets rendering of header component based on this.state.header */
     let displayHeaderOrSelectCity = this.state.header ? <Header action={this.handler}/> : <SelectCity/>
     return (
         <div>{displayHeaderOrSelectCity}</div>
