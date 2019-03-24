@@ -1,4 +1,4 @@
-[
+export const cities = [
   
   {'city': 'Abbeville', 'state': 'LA'},
   {'city': 'Aberdeen', 'state': 'MD'},
@@ -5981,3 +5981,5 @@
 {'city': 'Zionsville', 'state': 'IN'},
 {'city': 'Zuni Pueblo', 'state': 'NM'},
   ]
+
+export default {cities}
