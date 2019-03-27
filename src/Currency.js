@@ -1,15 +1,15 @@
 import React, { Component } from "react"
 
-class City extends Component {
+class Currency extends Component {
     render() {
         return (
             <div>
                 <span>
-                    <a href={"#"}>{this.props.name}, {this.props.state}</a> 
+                    <a href={"#"}>{this.props.coin}</a> 
                 </span>
             </div>
         )
     }
 }
 
-export default City
+export default Currency

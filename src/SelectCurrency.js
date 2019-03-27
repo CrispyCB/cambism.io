@@ -1,22 +1,22 @@
 import React, { Component } from "react"
 import "./Header.css"
 
-import City from "./City.js"
+import Currency from "./Currency.js"
 
-import {cities} from "./usaCities.js"
+import {currencies} from "./currencies.js"
 
-class SelectCity extends Component {
+class SelectCurrency extends Component {
     render() {
       
       return (
         <div className="Header">
             <header className="header-inside">
-            Select your city:
+            Select your currency:
             </header>
             <div className="dropdown">
-              <span><a href={"#"}>Baltimore, MD</a></span>
+              <span><a href={"#"}>BitCoin</a></span>
               <div className="dropdown-content">
-               {cities.sort(cities["state"]).map((city) => <City name={city["city"]} state={city["state"]}/>)}
+               {currencies.map((currency) => <Currency coin={currency["coin"]} />)}
               </div>
             </div>
         </div>
@@ -24,4 +24,4 @@ class SelectCity extends Component {
     }
   }
   
-  export default SelectCity;
+  export default SelectCurrency;

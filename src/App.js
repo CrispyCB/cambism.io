@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import "./App.css"
 import Header from "./Header.js"
-import SelectCity from './SelectCity.js';
+import SelectCurrency from './SelectCurrency.js';
 
 
 class App extends Component {
@@ -20,9 +21,9 @@ class App extends Component {
 
   render() {
     /* sets rendering of header component based on this.state.header */
-    let displayHeaderOrSelectCity = this.state.header ? <Header action={this.handler}/> : <SelectCity/>
+    let displayHeaderOrSelectCurrency = this.state.header ? <Header action={this.handler}/> : <SelectCurrency/>
     return (
-        <div>{displayHeaderOrSelectCity}</div>
+        <div>{displayHeaderOrSelectCurrency}</div>
     );
 }
 }
