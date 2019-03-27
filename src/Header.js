@@ -9,7 +9,7 @@ class Header extends Component {
             Cambism: <em>noun</em> the theory and practice of exchange.
             </header>
             {/*pushes action property up from Header.js to App.js */}
-            <button className="btn-flat" onClick={this.props.action}>Exchange some goods</button>
+            <button className="btn-flat" onClick={this.props.action}>Exchange some coins</button>
         </div>
         )
     }
