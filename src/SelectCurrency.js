@@ -14,9 +14,9 @@ class SelectCurrency extends Component {
             Select your currency:
             </header>
             <div className="dropdown">
-              <span><a href={"#"}>BitCoin</a></span>
+              <span><button>BitCoin</button></span>
               <div className="dropdown-content">
-               {currencies.map((currency) => <Currency coin={currency["coin"]} />)}
+               {currencies.map((currency) => <Currency coin={currency["coin"]} action={this.props.handler}/>)}
               </div>
             </div>
         </div>

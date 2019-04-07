@@ -5,7 +5,7 @@ class Currency extends Component {
         return (
             <div>
                 <span>
-                    <a href={"#"}>{this.props.coin}</a> 
+                    <button onClick={this.props.handler}>{this.props.coin}</button> 
                 </span>
             </div>
         )
