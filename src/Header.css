@@ -12,12 +12,14 @@ button {
   color: white;
   
 }
-span {
+select {
+  appearance: none;
   font-family: 'IM Fell Great Primer', serif;
-  text-transform: uppercase;
+  background-color: #282c34;
   color: white;
-  display: block;
+  text-transform: uppercase;
 }
+
 .btn-flat {
   border: none;
   border-radius: 2px;
@@ -31,12 +33,6 @@ span {
 }
 .btn-flat:hover {
   text-decoration-line: underline;
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-.dropdown-content {
-  display: none;
 }
 .Header {
   text-align: center;

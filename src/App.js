@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./App.css"
 import Header from "./Header.js"
-import Body from "./Body.js"
+import SelectCurrency from "./SelectCurrency.js"
 
 
 class App extends Component {
@@ -21,9 +21,9 @@ class App extends Component {
 
   render() {
     /* sets rendering of header component based on this.state.header */
-    let displayHeaderOrBody = this.state.header ? <Header action={this.handler}/> : <Body/>
+    let displayHeaderOrSelectCurrency = this.state.header ? <Header action={this.handler}/> : <SelectCurrency/>
     return (
-        <div>{displayHeaderOrBody}</div>
+        <div>{displayHeaderOrSelectCurrency}</div>
     );
 }
 }

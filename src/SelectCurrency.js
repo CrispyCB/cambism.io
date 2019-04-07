@@ -1,10 +1,6 @@
 import React, { Component } from "react"
 import "./Header.css"
 
-import Currency from "./Currency.js"
-
-import {currencies} from "./currencies.js"
-
 class SelectCurrency extends Component {
     render() {
       
@@ -13,12 +9,16 @@ class SelectCurrency extends Component {
             <header className="header-inside">
             Select your currency:
             </header>
-            <div className="dropdown">
-              <span><button>BitCoin</button></span>
-              <div className="dropdown-content">
-               {currencies.map((currency) => <Currency coin={currency["coin"]} action={this.props.handler}/>)}
-              </div>
-            </div>
+            <select>
+              <option value="">Bitcoin</option>
+              <option value="">Bitcoin Gold</option>
+              <option value="">BitCoin Diamond</option>
+              <option value="">Ethereum</option>
+              <option value="">Ethereum Classic</option>
+              <option value="">Ripple</option>
+              <option value="">EOS</option>
+              <option value="">LiteCoin</option>
+            </select>
         </div>
       );
     }
