@@ -10,14 +10,14 @@ class SelectCurrency extends Component {
             Select your currency:
             </header>
             <select>
-              <option value="">Bitcoin</option>
-              <option value="">Bitcoin Gold</option>
-              <option value="">BitCoin Diamond</option>
-              <option value="">Ethereum</option>
+              <option value="90">Bitcoin</option>
+              <option value="285">Bitcoin Gold</option>
+              <option value="32073">BitCoin Diamond</option>
+              <option value="80">Ethereum</option>
               <option value="">Ethereum Classic</option>
-              <option value="">Ripple</option>
-              <option value="">EOS</option>
-              <option value="">LiteCoin</option>
+              <option value="58">Ripple/XRP</option>
+              <option value="2679">EOS</option>
+              <option value="1">LiteCoin</option>
             </select>
         </div>
       );
