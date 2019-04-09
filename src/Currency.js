@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import "./Currency.css"
 
 class Currency extends Component {
     constructor (props) {
@@ -14,7 +15,9 @@ class Currency extends Component {
             return response.json();
         })
         .then(info => {
-            console.log(info)
+            this.setState({
+                coinInfo: info[0]
+            })
         })
         .catch(err => console.error(err));
     }
@@ -22,6 +25,7 @@ class Currency extends Component {
         console.log(this.state.coinInfo)
         return (
             <div>
+                <p>{this.state.coinInfo.name} is currently worth ${this.state.coinInfo.price_usd}.</p>
             </div>
         )
     }
