@@ -29,7 +29,7 @@ class SelectCurrency extends Component {
             <header className="header-inside">
             Select your currency:
             </header>
-            <select value={this.state.coin} onChange={this.select}>
+            <select value={''} onChange={this.select}>
               <option value="90" >Bitcoin</option>
               <option value="285" >Bitcoin Gold</option>
               <option value="32073" >BitCoin Diamond</option>
