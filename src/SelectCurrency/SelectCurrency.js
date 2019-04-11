@@ -1,6 +1,6 @@
 import React, { Component } from "react"
-import "./Header.css"
-import Currency from "./Currency";
+import "../../src/Header/Header.js"
+import Currency from "../../src/Currency/Currency.js";
 
 class SelectCurrency extends Component {
     constructor (props) {

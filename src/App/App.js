@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import "./App.css"
-import Header from "./Header.js"
-import SelectCurrency from "./SelectCurrency.js"
+import Header from "../../src/Header/Header.js"
+import SelectCurrency from "../../src/SelectCurrency/SelectCurrency.js"
 
 
 class App extends Component {
