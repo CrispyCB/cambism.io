@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "./App.css"
-import Home from "../../src/Home/Home.js"
+import Header from "../../src/Header/Header.js"
 import SelectCurrency from "../../src/SelectCurrency/SelectCurrency.js"
 
 
@@ -10,20 +10,20 @@ class App extends Component {
     //bind this.handler function to context
     this.handler = this.handler.bind(this);
     this.state = {
-      Home: true
+      header: true
     }
   }
   handler() {
     this.setState({
-      Home: false
+      header: false
     })
   }
 
   render() {
-    /* sets rendering of Home component based on this.state.Home */
-    let displayHomeOrSelectCurrency = this.state.Home ? <Home action={this.handler}/> : <SelectCurrency/>
+    /* sets rendering of header component based on this.state.header */
+    let displayHeaderOrSelectCurrency = this.state.header ? <Header action={this.handler}/> : <SelectCurrency/>
     return (
-        <div>{displayHomeOrSelectCurrency}</div>
+        <div>{displayHeaderOrSelectCurrency}</div>
     );
 }
 }

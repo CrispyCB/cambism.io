@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import "../../src/Home/Home.js"
+import "../../src/Header/Header.js"
 import Currency from "../../src/Currency/Currency.js";
 
 class SelectCurrency extends Component {
@@ -25,10 +25,10 @@ class SelectCurrency extends Component {
       }
       
       return (
-        <div className="Home">
-            <Home className="Home-inside">
+        <div className="Header">
+            <header className="header-inside">
             Select your currency:
-            </Home>
+            </header>
             <select value={''} onChange={this.select}>
               <option value="90" >Bitcoin</option>
               <option value="285" >Bitcoin Gold</option>
