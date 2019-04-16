@@ -1,18 +1,18 @@
 import React, { Component } from "react";
-import "./Header.css"
+import "./Home.css"
 
-class Header extends Component {
+class Home extends Component {
       render() {
         return(
-        <div className="Header">
-            <header className="header-inside">
+        <div className="Home">
+            <Home className="Home-inside">
             Cambism: <em>noun</em> the theory and practice of exchange.
-            </header>
-            {/*pushes action property up from Header.js to App.js */}
+            </Home>
+            {/*pushes action property up from Home.js to App.js */}
             <button className="btn-flat" onClick={this.props.action}>Exchange some coins</button>
         </div>
         )
     }
 }
 
-export default Header
+export default Home
