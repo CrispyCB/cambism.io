@@ -10,6 +10,7 @@ class Currency extends Component {
     }
     
     componentDidMount(){
+        //extract below method out into API.
         fetch(`https://api.coinlore.com/api/ticker/?id=${this.props.coin}`)
         .then(function(response) {
             return response.json();
